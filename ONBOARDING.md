@@ -12,7 +12,7 @@ Before continuing, If you haven't already, please review the [README](README.md)
 
 ## Communications ##  
 
-The FarmData2 community uses [Zulip](https://zulip.com/) as it communication platform. Zulip is a group chat application that blends the benefits of asynchronous threaded discussions (e.g. a forum) with live chat.
+The FarmData2 community uses [Zulip](https://zulip.com/) as its communication platform. Zulip is a group chat application that blends the benefits of asynchronous threaded discussions (e.g. a forum) with live chat.
 
 Connecting with the [FarmData2 community](https://farmdata2.zulipchat.com/) on Zulip provides a place to ask questions of the project managers and the broader developer community.
 
@@ -32,7 +32,7 @@ The following resources can be useful for learning what you'll need to know abou
     - [GitFlow Intro](https://guides.github.com/introduction/flow/): An introduction to an effective way of using GitHub (i.e. a _workflow_).  The followign two guides walk through how to work with existing open source projects and essentially follow GitFlow:
       - [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
       - [7 Steps to Get Started with Git](https://www.fosslife.org/7-steps-get-started-git).
-    - [Git Immersion](https://gitimmersion.com/): A tutorial walks through a series of short hands-on exercises that provide practice with the key features of git.
+    - [Git Immersion](https://gitimmersion.com/): A tutorial that walks through a series of short hands-on exercises that provide practice with the key features of git.
     - [Pro Git Book](http://git-scm.com/book/en/v2) | [Learn Git Tutorial](https://www.tutorialspoint.com/git/index.htm): More detailed and comprehensive coverage of git's features and use.
 
 ## Quickest Start ##
@@ -133,7 +133,7 @@ The majority of development for FarmData2 is front-end (i.e. browser-based).  Th
 
 #### FarmOS API ####
 
-The FarmData2 front end exchanges data with the server using the [FarmOS API](https://farmos.org/development/api/). JavaScript code using the [Axios](https://github.com/axios/axios) library requests data from FarmOS (e.g. a list of fields) or sends new data to FarmOS (e.g. a new planting). When data is received from FarmOS, the Vue.js object is updated, which in turn updates what is displayed in the browser. Conversely, when the user enters data in the browser, that data updates the Vue.js object and that information is used to make requests to the server.
+The FarmData2 front end exchanges data with the server using the [farmOS API](https://farmos.org/development/api/). JavaScript code using the [Axios](https://github.com/axios/axios) library requests data from farmOS (e.g. a list of fields) or sends new data to farmOS (e.g. a new planting). When data is received from farmOS, the Vue.js object is updated, which in turn updates what is displayed in the browser. Conversely, when the user enters data in the browser, that data updates the Vue.js object and that information is used to make requests to the server.
 
   - Resources:
     - [What is an API and how does it work?](https://www.youtube.com/watch?v=Yzx7ihtCGBs): A video introduction to APIs with a few examples.This is a good place to start if you are new to APIs.
@@ -155,7 +155,7 @@ The functionality of FarmData2 is tested using the [Cypress framework](https://w
 
 ##### End-to-End Tests #####
 
-The Cypress end-to-end test framework works by controlling the web browser. A test typically consists of a series of steps that are automated by the Cypress tests, called _spec_s. A typical spec consist of the steps:
+The Cypress end-to-end test framework works by controlling the web browser. A test typically consists of a series of steps that are automated by the Cypress tests, called *spec*s. A typical spec consist of the steps:
   1. Setup the test (e.g. login, prime the database)
   1. Visit a specific page
   1. Query the page for an _html element_ of interest (e.g. button, text field)
@@ -173,7 +173,7 @@ The Cypress end-to-end test framework works by controlling the web browser. A te
     - [FarmData2 Cypress Tests Details](https://github.com/DickinsonCollege/FarmData2/blob/main/farmdata2_modules/fd2_tabs/fd2_example/README.md): Information on specifically how FarmData2 uses Cypress tests.
 ##### Component Tests #####
 
-Cypress component tests work by mounting a Vue Component into a browser and allowing tests to interact with it in isolation from the application.  A typical comonent test will:
+Cypress component tests work by mounting a Vue Component into a browser and allowing tests to interact with it in isolation from the application.  A typical component test will:
   1. Configuring and mounting the component into the test framework.
   1. Query the component for an _html element_ of interest (e.g. button, ext field)
   1. Interact with that element (e.g. click the button, enter some text)
@@ -221,4 +221,4 @@ farmOS runs on top of Drupal. From the FarmData2 perspective this is largely tra
 
 #### drush ####
 
-For a few particular tasks related to initializtion and configuration FarmData2 makes use of [drush](https://www.drush.org/latest/) to interact with the Drupal instance on which farmOS is running. As it is discovered that more information is necessary it will be added here.
+For a few particular tasks related to initialization and configuration FarmData2 makes use of [drush](https://www.drush.org/latest/) to interact with the Drupal instance on which farmOS is running. As it is discovered that more information is necessary it will be added here.
